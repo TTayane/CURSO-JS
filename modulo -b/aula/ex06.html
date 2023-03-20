@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício modulo B</title>
+</head>
+<body>
+    <h1>Operadores aritiméticos </h1>
+    <ul>
+        <li>+ -> adição (ex: 5 +2 = 7)</li>
+        <li>- -> subtração (ex: 5 - 2 = 3)</li>
+        <li>* -> multiplicação (Ex: 5 *2= 10)</li>
+        <li>/ -> divisão (ex: 5 /2= 2,5)</li>
+        <li>% -> resto da divisão por 2 (ex: 5 % 2 = 1)</li>
+        <li>**-> raiz (ex: 5**2=25)</li>
+    </ul>
+<p>nos operadores, aquele que vc quiser que ter o resultado primeiro precisa está entre parentese. ex: (5+3)/2= 4 --> primeiro soma depois divide. se não estivesse entre parentese o resultado seria: 5+3/2= 6.5, pois a preferência inicial será da divisão  </p>
+<h2>Ordem de precedência dos operadores</h2>
+<ul>
+    <li>1° -> ()</li>
+    <li>2° -> **</li>
+    <li>3° -> * - / - %</li>
+    <li>4° -> +  -</li>
+</ul>
+
+<h2>auto-atribuição</h2>
+<p>var n=3 <br> n= n+ 3 --> resultado será 7 <br> n= n * 2 --> o resultado será 14</p>
+
+<h3>simplificando a varíavel</h3> 
+<p>n=3 <br> n+= 3 (7) <br> n*= 2 (14) ...</p>
+
+<h3>variavel de incremento</h3>
+<p> n=3 <br> n++ (4) <br> n-- (3)</p>
+
+<h1>Operadores relacionais</h1>
+<ul>
+    <li> 5 >2 = true</li>
+    <li> 7 < 2 = 4 = false</li>
+    <li> 8 >=8 = true</li>
+    <li> 9 <= 7 = false</li>
+    <li> 5 ==5 = true</li>
+    <li>  != 4 = false</li>
+</ul>
+
+<p>O símbolo de igual ==, não vai fazer distinsão entre formas, ex: 5 é igual a '5' apesar deste ultimo ser uma string, porém ele não será igual como 5==='5', a grandeza é a mesmo mas um pe numero e o outro string <br> 5 ==5 -> true <br> 5=="5" -> true <br> 5 === 5 -> true <br> 5 === '5' -> false</p>
+
+<h1>Operadores Lógicos</h1>
+<ul>
+    <li>! -> negação (true -> false / false-> true)</li>
+    <li>&& -> conjunção <br> true && true> true / <br> true && false -> false / <br> false && true -> false/ <br> false && false -> false</li>
+    <li>|| -> disjunção <br> true || true -> true/ <br> true || false -> true/ <br> false || true -> true/ <br> false || false -> false</li>
+</ul>
+
+<h1>ODEM DE PRECENDENCIA GERAL</h1>
+<ul>
+    <li>() / ** / / ...</li>
+    <li> > / < / >= ...</li>
+    <li>!</li>
+    <li>&&</li>
+    <li>||</li>
+
+    <h2>Ternários</h2>
+    <ul>
+        <li>?</li>
+        <li>:</li>
+    </ul>
+    <p>Ex: var media= 5,5 <br> media >7 ? 'aprovado' : ' reprovado'</p>
+</ul>
+</body>
+</html>

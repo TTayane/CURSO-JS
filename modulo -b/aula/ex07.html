@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background-color: rgba(163, 63, 63, 0.726);
+        }
+        
+        h1{
+            font-style: normal;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando com DOM</h1>
+    <p>Aprendendo a usar o <strong>DOM</strong> no javascript</p>
+    <p>O dom é sua arvore raiz (chamada de window), nele vai conter todas as tags e objetos (elementos) e quais são os pais e as filhas. O DOM so funciona quado está rodando o JS dentro do navegador.</p>
+    <img src="dom.jpg" alt="DOM">
+    <div>Clique em mim</div>
+    <script>
+        window.document.write(window.document.URL) 
+    </script>
+ <!-- sempre usar o document.write sempre que quiser que algo seja mostrado no navegador-->
+ <!--no parentese informa qual o elemento que quer ser selecionado, o do ex. é o paragrafo (p), mas como existe mais de um paragrafo colocase no colchete qual a sua ordem, sendo o 0 o primeiro parágrafo.-->
+    <h1>Metodos de acesso do DOM</h1>
+    <ul>
+        <li><strong> Marca</strong> -->Ex no script.  <!--esta dentro de document e seu comando é: getElementsByTagName() [], como o elements está em plural adiciona um [] no final para informar qual elemento que quer que seja selecionado --> </li>
+        <li><strong>ID</strong></li>
+        <li><strong>Nome</strong></li>
+        <li><strong>Classe</strong></li>
+        <li><strong>Seletor</strong></li>
+    </ul>
+    <script>
+        var pp= window.document.getElementsByTagName('h1')[0]
+        window.document.write('O primeiro h1 é:' + pp.innerText )
+        var corpo= window.document.getElementsByTagName('p') [0]
+        window.document.write('O primeiro parágrado é: ' + corpo.innerText)
+        corpo.style.color='yellow'
+    </script>
+    <script>
+        
+        
+    </script>
+   
+</body>
+</html>

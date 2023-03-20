@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício do modulo B- JS (aula 5/6)</title>
+</head>
+<style>
+    body{
+        background-color: rgba(185, 159, 159, 0.801);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: normal;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Teste do primeiro exercício de JS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint eveniet veniam ad quibusdam, fuga neque accusantium expedita. Molestias voluptas nemo deserunt amet enim? Eum, possimus quasi. Pariatur, quos commodi!</p>
+    <script>
+        var n1= Number(window.prompt("Digite um número")) 
+        var n2= Number(window.prompt("Digite outro número"))
+        var s= (n1 + n2)
+        window.alert("A soma entre n1 e n2 é igual a " + s)
+        // o propt sempre retorna uma string, mesmo vc colocando número, então uma resposta em número sempre dará errado. Para correção é preciso converter de string para número ---> se quiser converter para número inteiro: Number.parseInt(n); se for número real (com quebradinho): Number.parseFloat(n) -- se vc quiser que o VS code decida qual usar é só colocar: Number//
+        // para converter de número para string é só inverter, temos 2 opções: String(n) ou n.toString()//
+        // o valor do + em JS tem dois significados: o de adição e o de concatenação//
+    </script>
+</body>
+</html>

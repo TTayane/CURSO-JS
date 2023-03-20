@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        div#janela {
+            background-color: #8152ad;
+            color: blanchedalmond;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="janela" onclick="clicar ()" onmouseenter="entrar ()" onmouseout="sair ()">
+        interaja..janela fechada
+    </div>
+   
+    <h1>Eventos feito pelo mouse</h1>
+    <p>No link abaixo você encontrará os tipos d einteração feitas pelo mouse ou estado do ambiente. Os <strong>events</strong> são feitos atravez da <strong>DIV</strong></p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/Events">Eventos usando o mouse</a>
+
+    <h2>FUNÇÃO</h2>
+    <p>conjusnto de códigos ou linhas (blocos) que seão executados só quando os events ocorrer. Ex: dispara uma linha só quando passar o maouse </p>
+    <p> Para isso ocorrer vc precisa colocar esse códico entre {}, e será representado pela <STRONG>function + a ação que irá ocorrer(algum parâmetro) {}</STRONG></p>
+
+    <script>
+        //se vc quiser deixar seu html limpo, pode colocar essas ações do funcion no JS atraves do script, ao inves de deixar em uma div. ex:
+        var a = window.document.getElementById ("janela") 
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair) //
+
+        var a = window.document.getElementById ("janela") // esse objeto serve para as 3 fuction abaixo, funciona como um objeto global//
+        function clicar (){
+            a.innerText="janela aberta"
+            a.style.background= "red"
+            a.style.color="black"
+        }
+        function entrar (){
+            a.innerText="entrou"
+            a.style.background="#8152ad"
+        }
+
+        function sair (){
+            a.innerText="sair"
+            a.style.background='blue'
+        }
+    </script>
+</body>
+</html>
